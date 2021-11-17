@@ -27,7 +27,7 @@ namespace BankApi.Controllers
             return await _context.PaymentListItems.ToListAsync();
         }
 
-        // GET: api/PaymentListItems/5
+        // GET: api/PaymentListItems/1
         [HttpGet("{id}")]
         public async Task<ActionResult<PaymentListItem>> GetPaymentListItem(int id)
         {
@@ -41,7 +41,7 @@ namespace BankApi.Controllers
             return paymentListItem;
         }
 
-        // GET: api/PaymentListItems/5
+        // GET: api/PaymentListItems/GetByUserId/1
         [HttpGet("GetByUserId/{userId}")]
         public async Task<ActionResult<List<PaymentListItem>>> GetPaymentListByUserId(int userId)
         {
@@ -58,7 +58,7 @@ namespace BankApi.Controllers
             return paymentListItem;
         }
 
-        // PUT: api/PaymentListItems/5
+        // PUT: api/PaymentListItems/1
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPaymentListItem(int id, PaymentListItem paymentListItem)
@@ -100,7 +100,7 @@ namespace BankApi.Controllers
             return CreatedAtAction("GetPaymentListItem", new { id = paymentListItem.Id }, paymentListItem);
         }
 
-        // DELETE: api/PaymentListItems/5
+        // DELETE: api/PaymentListItems/1
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePaymentListItem(int id)
         {
