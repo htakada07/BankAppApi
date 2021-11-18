@@ -9,7 +9,7 @@ namespace BankApi.Models
     public class Balance
     {
         public int Id { get; set; }
-        public decimal RemainingBalance { get; set; }
+        public decimal CurrentBalance { get; set; }
         [ForeignKey("User")]
         public int UserId { get; set; }
         public virtual User User { get; set; }

@@ -47,8 +47,10 @@ namespace BankApi.Controllers
         {
             var paymentListItem = await _context.PaymentListItems
                     .Include(s => s.User)
-                    .OrderByDescending(s => s.Date)//sorts the data by date
+                    .OrderByDescending(s => s.Date) //sorts the data by date
                     .Where(s => s.UserId == userId).ToListAsync();
+           
+         
 
             if (paymentListItem.Count == 0) //checks if there are no data found
             {

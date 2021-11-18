@@ -21,8 +21,7 @@ namespace BankApi.Models.Data
                 {
                     FirstName = "Hiroyuki",
                     LastName = "Takada"
-                }
-                ,
+                },
                 new User
                 {
                     FirstName = "John",
@@ -39,34 +38,14 @@ namespace BankApi.Models.Data
             {
                 new Balance
                 {
-                    RemainingBalance = 100000M,
+                    CurrentBalance = 100000M,
                     UserId = 1
                 },
                 new Balance
                 {
-                    RemainingBalance = 19172.92M,
-                    UserId = 1
-                },
-                new Balance
-                {
-                    RemainingBalance = 6358.12M,
-                    UserId = 1
-                },
-                new Balance
-                {
-                    RemainingBalance = 10982.11M,
+                    CurrentBalance = 20172.92M,
                     UserId = 2
-                },
-                new Balance
-                {
-                    RemainingBalance = 8712.69M,
-                    UserId = 2
-                },
-                new Balance
-                {
-                    RemainingBalance = 9800M,
-                    UserId = 2
-                },
+                }
             };
             foreach (Balance b in balances)
             {
@@ -83,6 +62,8 @@ namespace BankApi.Models.Data
                     IsReason = false,
                     Reason = null,
                     Status = Enums.Status.Closed,
+                    RemainingBalance = 3000M,
+                    Currency = "Php",
                     UserId = 1
                 },
                 new PaymentListItem
@@ -92,6 +73,8 @@ namespace BankApi.Models.Data
                     IsReason = true,
                     Reason = "Delayed due to connection problem",
                     Status = Enums.Status.Pending,
+                    RemainingBalance = 2500M,
+                    Currency = "Php",
                     UserId = 1
                 },
                 new PaymentListItem
@@ -101,6 +84,8 @@ namespace BankApi.Models.Data
                     IsReason = false,
                     Reason = null,
                     Status = Enums.Status.Closed,
+                    RemainingBalance = 5120M,
+                    Currency = "Php",
                     UserId = 1
                 },
                 new PaymentListItem
@@ -110,6 +95,8 @@ namespace BankApi.Models.Data
                     IsReason = true,
                     Reason = "Delayed due to bank system maintenance",
                     Status = Enums.Status.Pending,
+                    RemainingBalance = 9131M,
+                    Currency = "Php",
                     UserId = 2
                 },
                 new PaymentListItem
@@ -119,6 +106,8 @@ namespace BankApi.Models.Data
                     IsReason = false,
                     Reason = null,
                     Status = Enums.Status.Closed,
+                    RemainingBalance = 982M,
+                    Currency = "Php",
                     UserId = 2
                 },
                 new PaymentListItem
@@ -128,6 +117,8 @@ namespace BankApi.Models.Data
                     IsReason = true,
                     Reason = "Delayed due to bank system maintenance",
                     Status = Enums.Status.Pending,
+                    RemainingBalance = 1240M,
+                    Currency = "Php",
                     UserId = 2
                 },
                 new PaymentListItem
@@ -137,6 +128,8 @@ namespace BankApi.Models.Data
                     IsReason = false,
                     Reason = null,
                     Status = Enums.Status.Closed,
+                    RemainingBalance = 120M,
+                    Currency = "Php",
                     UserId = 1
                 }
             };
