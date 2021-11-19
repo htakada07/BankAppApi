@@ -31,13 +31,13 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+1. Clone the repo
+```sh
+git clone https://github.com/htakada07/BankAppApi.git
+```
 
 ### Prerequisites
 
@@ -47,25 +47,32 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+1. Build the project and run
+
+  The launch URL is 
+  ```
+  https://localhost:<port number>/api/PaymentListItems/ 
+  ```
+  which shows all the payment list items.
+  ```
+  https://localhost:<port number>/api/PaymentListItems/GetByUserId/{userId} 
+  ```
+  would return a specific user’s payment list item which is ordered by date.
 
 <p align="right">(<a href="#top">back to top</a>)</p
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+  
+Landing page is the SWAGGER UI
+![bankapp_swaggerUI](https://user-images.githubusercontent.com/48245321/142602346-5538562b-bfff-48cc-b711-f557c8acb4be.png)
+  
+Image below is the endpoint for getting all the list of payments. (GET: api/PaymentListItems)
+![bankapp_swaggerUI_getAll](https://user-images.githubusercontent.com/48245321/142602434-c8bc2fbb-8760-4404-ab89-8e134a5556d5.png)
+
+Image below is the endpoint for gettiing the list of payments for a specific user (GET: api/PaymentListItems/GetByUserId/{userId})
+![bankApp_swaggerUI_getByUserId](https://user-images.githubusercontent.com/48245321/142602745-2a8677c8-24ec-4df1-9058-30e401207a2d.png)
 
 Image below is the list of existing data for users that we can use as reference for getting data for balance and payment list.
 ![bankApp_users_screenshot](https://user-images.githubusercontent.com/48245321/142574336-350ff20c-0dbc-4b65-a2b3-c144d63e6c9d.png)
