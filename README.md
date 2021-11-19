@@ -1,15 +1,4 @@
 <div id="top"></div>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<br />
 <div align="center">
 <h1>Bank Application API</h3>
   <p align="center">
@@ -75,15 +64,14 @@ This is an example of how to list things you need to use the software and how to
    const API_KEY = 'ENTER YOUR API';
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+<p align="right">(<a href="#top">back to top</a>)</p
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
+  
 _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -93,7 +81,5 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 Hiroyuki Takada - hmtakada.cca@gmail.com
 
 Project Link: https://github.com/htakada07/BankAppApi.git
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
