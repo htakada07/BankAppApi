@@ -24,7 +24,8 @@ namespace BankApi.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<PaymentListItem>>> GetPaymentListItems()
         {
-            return await _context.PaymentListItems.ToListAsync();
+            //ordered in descending order using date
+            return await _context.PaymentListItems.OrderByDescending(s => s.Date).ToListAsync();
         }
 
         // GET: api/PaymentListItems/1
