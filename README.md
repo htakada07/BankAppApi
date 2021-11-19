@@ -24,7 +24,6 @@
   </ol>
 </details>
 
-
 ### Built With
 
 * [.NET Core Web API](https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-5.0)
@@ -42,11 +41,9 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+*Visual Studio 2019 16.8 or later with the ASP.NET and web development workload
+*.NET 5.0 SDK
+ 
 
 ### Installation
 
@@ -70,12 +67,15 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-(https://github.com/htakada07/BankAppApi/blob/main/screenshots/bank-api-json.png)
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Image below is the list of existing data for users that we can use as reference for getting data for balance and payment list.
+![bankApp_users_screenshot](https://user-images.githubusercontent.com/48245321/142574336-350ff20c-0dbc-4b65-a2b3-c144d63e6c9d.png)
   
-_For more examples, please refer to the [Documentation](https://example.com)_
+Upon using the HTTP API GET: api/PaymentListItems/GetByUserId/{userId}, we will be able to get the payment list for that particular user
+![bank-api-json](https://user-images.githubusercontent.com/48245321/142574332-b6f5fb29-0de2-4ba3-a4f6-9530baba00a6.png)
 
+Using the GET: api/PaymentListItems would return all existing data for payment list
+![bankApp_getAllPAymentList_screenshot](https://user-images.githubusercontent.com/48245321/142575203-69dd8978-5214-41aa-b32e-241da38fa054.png)
+  
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contact
